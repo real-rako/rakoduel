@@ -1,0 +1,16 @@
+name: rakoduel
+version: 0.01
+main: nl.rako.rakoduel.RakoDuel
+
+commands:
+  arena:
+    description: "Usage:
+    ./arena create <ArenaName>
+    ./arena delete <ArenaName>
+    ./arena list
+
+    "
+    permission: rako.arena
+  game:
+    description:
+    permission: rako.game
