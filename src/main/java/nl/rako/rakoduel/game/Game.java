@@ -56,7 +56,6 @@ public class Game {
         for(int i=0; i<gamePlayers.size(); i++) {
             Player player = Bukkit.getPlayer(gamePlayers.get(i));
             Location lobbylocation = (Location) RakoDuel.data.getArenaConfig().get("arenas.test.lobbylocation");
-            player.sendMessage(ChatColor.GREEN + "Waiting for more players.");
             player.teleport(lobbylocation);
         }
     }
