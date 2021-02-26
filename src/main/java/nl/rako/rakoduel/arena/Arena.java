@@ -1,13 +1,18 @@
 package nl.rako.rakoduel.arena;
 
 import nl.rako.rakoduel.RakoDuel;
+import nl.rako.rakoduel.Functions.Console;
 import org.bukkit.Location;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class Arena {
     private Location spawnlocation1;
@@ -51,6 +56,7 @@ public class Arena {
     public void setArenaConfig(FileConfiguration arenaConfig) {
         this.arenaConfig = arenaConfig;
     }
+
     public Location getSpawnlocation1() {
         return spawnlocation1;
     }
